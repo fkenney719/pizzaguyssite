@@ -1,0 +1,821 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="assets/pizza.ico">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
+</head>
+<body>
+  <div class="header-top-container">
+    <ul class="header-top-content">
+      <li class="header-top-object">
+        <a href="tel:1-570-282-2206"><img src="images/phone-icon.png" alt="phone-icon" class="header-top-phone-icon"></a>
+        <a href="tel:1-570-282-2206" class="phone-email-link"><span class="header-top-text">(570) 282-2206</span></a>
+      </li>
+      <li class="header-top-object">
+        <a href="mailto:pizzaguysofcarbondale@gmail.com"><img src="images/mail_icon.png" alt="mail-icon" class="header-top-mail-icon"></a>
+        <a href="mailto:pizzaguysofcarbondale@gmail.com" class="phone-email-link">
+          <span class="header-top-text">pizzaguysofcarbondale@gmail.com</span></a>
+      </li>
+    </ul>
+    <a href="order.html" target="_blank" class="order-button">ORDER!</a>
+    <a href="https://m.facebook.com/PizzaGuysCarbondale/?_ft_=top_level_post_id.777185949135715%3Atl_objid.777185949135715%3Apage_id.485429804977999%3Athid.485429804977999%3A306061129499414%3A2%3A0%3A1514793599%3A3608725513566167138%3Apage_insights.%7B%22485429804977999%22%3A%7B%22role%22%3A1%2C%22page_id%22%3A485429804977999%2C%22post_context%22%3A%7B%22story_fbid%22%3A777185949135715%2C%22publish_time%22%3A1511822164%2C%22story_name%22%3A%22EntStatusCreationStory%22%2C%22object_fbtype%22%3A266%7D%2C%22actor_id%22%3A485429804977999%2C%22parent_story_name%22%3A%22EntStatusCreationStory%22%2C%22sl%22%3A4%2C%22targets%22%3A%5B%7B%22page_id%22%3A485429804977999%2C%22actor_id%22%3A485429804977999%2C%22role%22%3A1%2C%22post_id%22%3A777185949135715%2C%22share_id%22%3A0%7D%5D%7D%7D&__tn__=C-R" target="_blank">
+    <img src="images/facebook-icon.png" alt="facebook-icon" class="header-top-facebook-icon"></a>
+  </div>
+  <div class="header-bottom-container">
+    <div class="navbar">
+      <a href="index.html"><img src="images/logo.png" alt="Pizza Guys Logo" class="logo"></a>
+      <a href="index.html" class="navbar-buttons">Home</a>
+	  	<a href="about.html" class="navbar-buttons">About Us</a>
+	  	<div class="dropdown">
+  			<a href="menu.html"><button class="dropbtn">Menu</button></a>
+  			<div class="dropdown-content">
+  		  		<a href="menu.html#pizza-menu">Pizza</a>
+  		  		<a href="menu.html#sandwich-menu">Sandwiches/Wraps</a>
+  		  		<a href="menu.html#starter-menu">Starters/Salads</a>
+  			</div>
+	  	</div>
+      <div class="dropdown-mobile-display">
+  			<button class="dropbtn-mobile-display">&#9776;</button>
+  			<div class="dropdown-content-mobile-display">
+  		  		<a href="index.html">Home</a>
+  		  		<a href="about.html">About</a>
+  		  		<a href="menu.html">Menu</a>
+  			</div>
+	  	</div>
+	  </div>
+  </div>
+  <div>
+    <img src="images/menu-splash.png" alt="Menu Page Splash Image" class="splash">
+  </div>
+  <div class="menu-content">
+    <div class="menu-header">
+      <h1 id="pizza-menu" class="menu-anchor">HAND-CRAFTED PIZZA</h1>
+    </div>
+    <div>
+      <div class="menu-pizza-text">
+        <h2 class="menu-item"><span class="menu-links" id="peckvilleModalTrigger">PECKVILLE</span> <span class="menu-item-description">(14" round 8 cut)</span></h2>
+          <div id="peckvilleModal" class="modal">
+            <div class="modal-content">
+              <h2 class="modal-menu-item">PECKVILLE
+                <span class="menu-item-description">(14" round 8 cut)</span>
+                <span class="close" id="peckvilleModalClose">&times;</span>
+              </h2>
+              <img src="images/peckville-menu-item.png" class="modal-display" alt="Peckville Pizza Image" />
+              <p class="menu-description">what we are known for! our homemade, airy dough sauced and topped with a blend of freshly grated creamy cheeses.
+              if you like cheese, you'll love this</p>
+              <p class="modal-menu-prices">Tray <span class="menu-item-price">$11.49</span> &nbsp; &nbsp; &frac12; Tray <span class="menu-item-price">$6.50</span></p>
+            </div>
+          </div>
+          <script>
+            // Get the modal
+            var peckvilleModal = document.getElementById('peckvilleModal');
+
+            // Get the modal trigger
+            var peckvilleModalTrigger = document.getElementById("peckvilleModalTrigger");
+
+            // Get the modal close button
+            var peckvilleModalClose = document.getElementById("peckvilleModalClose");
+
+            // Open modal on trgger click
+            peckvilleModalTrigger.onclick = function() {
+              peckvilleModal.style.display = "block";
+            }
+
+            // Close modal on close button click
+            peckvilleModalClose.onclick = function() {
+              peckvilleModal.style.display = "none";
+            }
+
+            // Close modal on any click outside modal image
+            window.onclick = function(event) {
+              if (event.target == peckvilleModal) {
+                peckvilleModal.style.display = "none";
+              }
+            }
+          </script>
+        <p class="menu-description">what we are known for!<br />our homemade, airy dough sauced and topped with a blend of freshly grated creamy cheeses.
+        if you like cheese, you'll love this</p>
+        <p class="menu-prices">Tray <span class="menu-item-price">$11.49</span> &nbsp; &nbsp; &frac12; Tray <span class="menu-item-price">$6.50</span></p>
+      </div>
+      <div class="menu-pizza-text">
+        <h2 class="menu-item"><span class="menu-links" id="newYorkModalTrigger">NEW YORK</span> <span class="menu-item-description">(14" round 8 cut)</span></h2>
+        <div id="newYorkModal" class="modal">
+          <div class="modal-content">
+            <h2 class="modal-menu-item">NEW YORK
+              <span class="menu-item-description">(14" round 8 cut)</span>
+              <span class="close" id="newYorkModalClose">&times;</span>
+            </h2>
+            <img src="images/peckville-menu-item.png" class="modal-display" alt="New York Pizza Image" />
+            <p class="menu-description">our fresh homemade dough, sauced and topped with mozzerella cheese</p>
+            <p class="modal-menu-prices">Tray <span class="menu-item-price">$11.49</span> &nbsp; &nbsp; &frac12; Tray <span class="menu-item-price">$6.99</span></p>
+          </div>
+        </div>
+        <script>
+          // Get the modal
+          var newYorkModal = document.getElementById('newYorkModal');
+
+          // Get the modal trigger
+          var newYorkModalTrigger = document.getElementById("newYorkModalTrigger");
+
+          // Get the modal close button
+          var newYorkModalClose = document.getElementById("newYorkModalClose");
+
+          // Open modal on trgger click
+          newYorkModalTrigger.onclick = function() {
+            newYorkModal.style.display = "block";
+          }
+
+          // Close modal on close button click
+          newYorkModalClose.onclick = function() {
+            newYorkModal.style.display = "none";
+          }
+
+          // Close modal on any click outside modal image
+          window.onclick = function(event) {
+            if (event.target == newYorkModal) {
+              newYorkModal.style.display = "none";
+            }
+          }
+        </script>
+        <p class="menu-description">our fresh homemade dough, sauced and topped with mozzerella cheese</p>
+        <p class="menu-prices">Tray <span class="menu-item-price">$11.49</span> &nbsp; &nbsp; &frac12; Tray <span class="menu-item-price">$6.99</span></p>
+      </div>
+      <div class="menu-pizza-text">
+        <h2 class="menu-item"><span class="menu-links" id="oldForgeModalTrigger">OLD FORGE</span> <span class="menu-item-description">(square 8 cut)</span></h2>
+        <div id="oldForgeModal" class="modal">
+          <div class="modal-content">
+            <h2 class="modal-menu-item">OLD FORGE
+              <span class="menu-item-description">(square 8 cut)</span>
+              <span class="close" id="oldForgeModalClose">&times;</span>
+            </h2>
+            <img src="images/peckville-menu-item.png" class="modal-display" alt="Old Forge Pizza Image" />
+            <p class="menu-description">old forge style dough, sauced and topped with a blend of freshly grated creamy cheeses</p>
+            <p class="modal-menu-prices">Tray <span class="menu-item-price">$11.49</span></p>
+          </div>
+        </div>
+        <script>
+          // Get the modal
+          var oldForgeModal = document.getElementById('oldForgeModal');
+
+          // Get the modal trigger
+          var oldForgeModalTrigger = document.getElementById("oldForgeModalTrigger");
+
+          // Get the modal close button
+          var oldForgeModalClose = document.getElementById("oldForgeModalClose");
+
+          // Open modal on trgger click
+          oldForgeModalTrigger.onclick = function() {
+            oldForgeModal.style.display = "block";
+          }
+
+          // Close modal on close button click
+          oldForgeModalClose.onclick = function() {
+            oldForgeModal.style.display = "none";
+          }
+
+          // Close modal on any click outside modal image
+          window.onclick = function(event) {
+            if (event.target == oldForgeModal) {
+              oldForgeModal.style.display = "none";
+            }
+          }
+        </script>
+        <p class="menu-description">old forge style dough, sauced and topped with a blend of freshly grated creamy cheeses</p>
+        <p class="menu-prices">Tray <span class="menu-item-price">$11.49</span></p>
+      </div>
+    </div>
+    <div class="menu-pizza-row">
+      <div class="menu-pizza-text">
+        <h2 class="menu-item"><span class="menu-links" id="carbondaleModalTrigger">CARBONDALE</span> <span class="menu-item-description">(square 8 cut)</span></h2>
+        <div id="carbondaleModal" class="modal">
+          <div class="modal-content">
+            <h2 class="modal-menu-item">CARBONDALE
+              <span class="menu-item-description">(square 8 cut)</span>
+              <span class="close" id="carbondaleModalClose">&times;</span>
+            </h2>
+            <img src="images/peckville-menu-item.png" class="modal-display" alt="Carbondale Pizza Image" />
+            <p class="menu-description">old forge style dough, sauced and topped with mozzerella cheese</p>
+            <p class="modal-menu-prices">Tray <span class="menu-item-price">$11.49</span></p>
+          </div>
+        </div>
+        <script>
+          // Get the modal
+          var carbondaleModal = document.getElementById('carbondaleModal');
+
+          // Get the modal trigger
+          var carbondaleModalTrigger = document.getElementById("carbondaleModalTrigger");
+
+          // Get the modal close button
+          var carbondaleModalClose = document.getElementById("carbondaleModalClose");
+
+          // Open modal on trgger click
+          carbondaleModalTrigger.onclick = function() {
+            carbondaleModal.style.display = "block";
+          }
+
+          // Close modal on close button click
+          carbondaleModalClose.onclick = function() {
+            carbondaleModal.style.display = "none";
+          }
+
+          // Close modal on any click outside modal image
+          window.onclick = function(event) {
+            if (event.target == carbondaleModal) {
+              carbondaleModal.style.display = "none";
+            }
+          }
+        </script>
+        <p class="menu-description">old forge style dough, sauced and topped with mozzerella cheese</p>
+        <p class="menu-prices">Tray <span class="menu-item-price">$11.49</span></p>
+      </div>
+      <div class="menu-pizza-text">
+        <h2 class="menu-item">TOPPINGS</h2>
+        <p class="menu-description">extra cheese, extra sauce, ranch, wing sauce, onion, tomato, mushrooms, sweet peppers,
+        hot peppers, green peppers, black olives, broccoli, pepporoni, sausage, hot sausage, bacon, ham</p>
+      </div>
+      <div class="menu-stromboli-text">
+        <h2 class="menu-item">STROMBOLI PIZZA</h2>
+        <p class="menu-description">steak & cheese, hot wing, italian, philly cheese steak, ham & cheese, meat lovers</p>
+      </div>
+    </div>
+    <div class="menu-header">
+      <h1 id="sandwich-menu" class="menu-anchor">SANDWICHES</h1>
+    </div>
+    <div>
+      <div class="menu-sandwich-column">
+        <div class="menu-sandwich-text">
+          <h2 class="menu-item"><span class="menu-links" id="italianSandwichModalTrigger">ITALIAN</span></h2>
+          <div id="italianSandwichModal" class="modal">
+            <div class="modal-content">
+              <h2 class="modal-menu-item">ITALIAN
+                <span class="close" id="italianSandwichModalClose">&times;</span>
+              </h2>
+              <img src="images/peckville-menu-item.png" class="modal-display" alt="Italian Sandwich Image" />
+              <p class="menu-description">old forge style dough, sauced and topped with mozzerella cheese</p>
+              <p class="modal-menu-prices">&frac12; <span class="menu-item-price">$6.49</span> &nbsp; &nbsp; Full <span class="menu-item-price">$11.99</span></p>
+            </div>
+          </div>
+          <script>
+            // Get the modal
+            var italianSandwichModal = document.getElementById("italianSandwichModal");
+
+            // Get the modal trigger
+            var italianSandwichModalTrigger = document.getElementById("italianSandwichModalTrigger");
+
+            // Get the modal close button
+            var italianSandwichModalClose = document.getElementById("italianSandwichModalClose");
+
+            // Open modal on trgger click
+            italianSandwichModalTrigger.onclick = function() {
+              italianSandwichModal.style.display = "block";
+            }
+
+            // Close modal on close button click
+            italianSandwichModalClose.onclick = function() {
+              italianSandwichModal.style.display = "none";
+            }
+
+            // Close modal on any click outside modal image
+            window.onclick = function(event) {
+              if (event.target == italianSandwichModal) {
+                italianSandwichModal.style.display = "none";
+              }
+            }
+          </script>
+          <p class="menu-description">extra cheese, extra sauce, ranch, wing sauce, onion, tomato, mushrooms, sweet peppers,
+          hot peppers, green peppers, black olives, broccoli, pepporoni, sausage, hot sausage, bacon, ham</p>
+          <p class="menu-prices">&frac12; <span class="menu-item-price">$6.49</span> &nbsp; &nbsp; Full <span class="menu-item-price">$11.99</span></p>
+        </div>
+      </div>
+      <div class="menu-sandwich-column">
+        <div class="menu-sandwich-text">
+          <h2 class="menu-item"><span class="menu-links" id="turkeyCheeseSandwichModalTrigger">TURKEY & CHEESE</span></h2>
+          <div id="turkeyCheeseSandwichModal" class="modal">
+            <div class="modal-content">
+              <h2 class="modal-menu-item">TURKEY & CHEESE
+                <span class="close" id="turkeyCheeseSandwichModalClose">&times;</span>
+              </h2>
+              <img src="images/peckville-menu-item.png" class="modal-display" alt="Turkey and Cheese Sandwich Image" />
+              <p class="menu-description">old forge style dough, sauced and topped with mozzerella cheese</p>
+              <p class="modal-menu-prices">&frac12; <span class="menu-item-price">$6.49</span> &nbsp; &nbsp; Full <span class="menu-item-price">$11.99</span></p>
+            </div>
+          </div>
+          <script>
+            // Get the modal
+            var turkeyCheeseSandwichModal = document.getElementById("turkeyCheeseSandwichModal");
+
+            // Get the modal trigger
+            var turkeyCheeseSandwichModalTrigger = document.getElementById("turkeyCheeseSandwichModalTrigger");
+
+            // Get the modal close button
+            var turkeyCheeseSandwichModalClose = document.getElementById("turkeyCheeseSandwichModalClose");
+
+            // Open modal on trgger click
+            turkeyCheeseSandwichModalTrigger.onclick = function() {
+              turkeyCheeseSandwichModal.style.display = "block";
+            }
+
+            // Close modal on close button click
+            turkeyCheeseSandwichModalClose.onclick = function() {
+              turkeyCheeseSandwichModal.style.display = "none";
+            }
+
+            // Close modal on any click outside modal image
+            window.onclick = function(event) {
+              if (event.target == turkeyCheeseSandwichModal) {
+                turkeyCheeseSandwichModal.style.display = "none";
+              }
+            }
+          </script>
+          <p class="menu-description">extra cheese, extra sauce, ranch, wing sauce, onion, tomato, mushrooms, sweet peppers,
+          hot peppers, green peppers, black olives, broccoli, pepporoni, sausage, hot sausage, bacon, ham</p>
+          <p class="menu-prices">&frac12; <span class="menu-item-price">$6.49</span> &nbsp; &nbsp; Full <span class="menu-item-price">$11.99</span></p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="menu-sandwich-column">
+        <div class="menu-sandwich-text">
+          <h2 class="menu-item"><span class="menu-links" id="roastBeefSandwichModalTrigger">ROAST BEEF</span></h2>
+          <div id="roastBeefSandwichModal" class="modal">
+            <div class="modal-content">
+              <h2 class="modal-menu-item">ROAST BEEF
+                <span class="close" id="roastBeefSandwichModalClose">&times;</span>
+              </h2>
+              <img src="images/peckville-menu-item.png" class="modal-display" alt="Roast Beef Sandwich Image" />
+              <p class="menu-description">old forge style dough, sauced and topped with mozzerella cheese</p>
+              <p class="modal-menu-prices">&frac12; <span class="menu-item-price">$6.99</span> &nbsp; &nbsp; Full <span class="menu-item-price">$12.99</span></p>
+            </div>
+          </div>
+          <script>
+            // Get the modal
+            var roastBeefSandwichModal = document.getElementById("roastBeefSandwichModal");
+
+            // Get the modal trigger
+            var roastBeefSandwichModalTrigger = document.getElementById("roastBeefSandwichModalTrigger");
+
+            // Get the modal close button
+            var roastBeefSandwichModalClose = document.getElementById("roastBeefSandwichModalClose");
+
+            // Open modal on trgger click
+            roastBeefSandwichModalTrigger.onclick = function() {
+              roastBeefSandwichModal.style.display = "block";
+            }
+
+            // Close modal on close button click
+            roastBeefSandwichModalClose.onclick = function() {
+              roastBeefSandwichModal.style.display = "none";
+            }
+
+            // Close modal on any click outside modal image
+            window.onclick = function(event) {
+              if (event.target == roastBeefSandwichModal) {
+                roastBeefSandwichModal.style.display = "none";
+              }
+            }
+          </script>
+          <p class="menu-description">extra cheese, extra sauce, ranch, wing sauce, onion, tomato, mushrooms, sweet peppers,
+          hot peppers, green peppers, black olives, broccoli, pepporoni, sausage, hot sausage, bacon, ham</p>
+          <p class="menu-prices">&frac12; <span class="menu-item-price">$6.99</span> &nbsp; &nbsp; Full <span class="menu-item-price">$12.99</span></p>
+        </div>
+      </div>
+      <div class="menu-sandwich-column">
+        <div class="menu-sandwich-text">
+          <h2 class="menu-item"><span class="menu-links" id="hamCheeseSandwichModalTrigger">HAM & CHEESE</span></h2>
+          <div id="hamCheeseSandwichModal" class="modal">
+            <div class="modal-content">
+              <h2 class="modal-menu-item">HAM & CHEESE
+                <span class="close" id="hamCheeseSandwichModalClose">&times;</span>
+              </h2>
+              <img src="images/peckville-menu-item.png" class="modal-display" alt="Ham and Cheese Sandwich Image" />
+              <p class="menu-description">old forge style dough, sauced and topped with mozzerella cheese</p>
+              <p class="modal-menu-prices">&frac12; <span class="menu-item-price">$6.49</span> &nbsp; &nbsp; Full <span class="menu-item-price">$11.99</span></p>
+            </div>
+          </div>
+          <script>
+            // Get the modal
+            var hamCheeseSandwichModal = document.getElementById("hamCheeseSandwichModal");
+
+            // Get the modal trigger
+            var hamCheeseSandwichModalTrigger = document.getElementById("hamCheeseSandwichModalTrigger");
+
+            // Get the modal close button
+            var hamCheeseSandwichModalClose = document.getElementById("hamCheeseSandwichModalClose");
+
+            // Open modal on trgger click
+            hamCheeseSandwichModalTrigger.onclick = function() {
+              hamCheeseSandwichModal.style.display = "block";
+            }
+
+            // Close modal on close button click
+            hamCheeseSandwichModalClose.onclick = function() {
+              hamCheeseSandwichModal.style.display = "none";
+            }
+
+            // Close modal on any click outside modal image
+            window.onclick = function(event) {
+              if (event.target == hamCheeseSandwichModal) {
+                hamCheeseSandwichModal.style.display = "none";
+              }
+            }
+          </script>
+          <p class="menu-description">extra cheese, extra sauce, ranch, wing sauce, onion, tomato, mushrooms, sweet peppers,
+          hot peppers, green peppers, black olives, broccoli, pepporoni, sausage, hot sausage, bacon, ham</p>
+          <p class="menu-prices">&frac12; <span class="menu-item-price">$6.49</span> &nbsp; &nbsp; Full <span class="menu-item-price">$11.99</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="menu-header">
+      <h1 class="wraps">GOURMET WRAPS</h1>
+      <h6 class="wraps-description">(plain, whole wheat, sun dried tomato, jalapeno, garlic pesto, spinach, southwestern)</h6>
+    </div>
+    <div>
+      <div class="menu-sandwich-column">
+        <div class="menu-sandwich-text">
+          <h2 class="menu-item"><span class="menu-links" id="italianWrapModalTrigger">ITALIAN</span></h2>
+          <div id="italianWrapModal" class="modal">
+            <div class="modal-content">
+              <h2 class="modal-menu-item">ITALIAN
+                <span class="close" id="italianWrapModalClose">&times;</span>
+              </h2>
+              <img src="images/peckville-menu-item.png" class="modal-display" alt="Italian Wrap Image" />
+              <p class="menu-description">old forge style dough, sauced and topped with mozzerella cheese</p>
+              <p class="modal-menu-prices"><span class="menu-item-price">$6.49</span></p>
+            </div>
+          </div>
+          <script>
+            // Get the modal
+            var italianWrapModal = document.getElementById("italianWrapModal");
+
+            // Get the modal trigger
+            var italianWrapModalTrigger = document.getElementById("italianWrapModalTrigger");
+
+            // Get the modal close button
+            var italianWrapModalClose = document.getElementById("italianWrapModalClose");
+
+            // Open modal on trgger click
+            italianWrapModalTrigger.onclick = function() {
+              italianWrapModal.style.display = "block";
+            }
+
+            // Close modal on close button click
+            italianWrapModalClose.onclick = function() {
+              italianWrapModal.style.display = "none";
+            }
+
+            // Close modal on any click outside modal image
+            window.onclick = function(event) {
+              if (event.target == italianWrapModal) {
+                italianWrapModal.style.display = "none";
+              }
+            }
+          </script>
+          <p class="menu-description">extra cheese, extra sauce, ranch, wing sauce, onion, tomato, mushrooms, sweet peppers,
+          hot peppers, green peppers, black olives, broccoli, pepporoni, sausage, hot sausage, bacon, ham</p>
+          <p class="menu-prices"><span class="menu-item-price">$6.49</span></p>
+        </div>
+      </div>
+      <div class="menu-sandwich-column">
+        <div class="menu-sandwich-text">
+          <h2 class="menu-item"><span class="menu-links" id="turkeyCheeseWrapModalTrigger">TURKEY & CHEESE</span></h2>
+          <div id="turkeyCheeseWrapModal" class="modal">
+            <div class="modal-content">
+              <h2 class="modal-menu-item">TURKEY & CHEESE
+                <span class="close" id="turkeyCheeseWrapModalClose">&times;</span>
+              </h2>
+              <img src="images/peckville-menu-item.png" class="modal-display" alt="Turkey and Cheese Wrap Image" />
+              <p class="menu-description">old forge style dough, sauced and topped with mozzerella cheese</p>
+              <p class="modal-menu-prices"><span class="menu-item-price">$6.49</span></p>
+            </div>
+          </div>
+          <script>
+            // Get the modal
+            var turkeyCheeseWrapModal = document.getElementById("turkeyCheeseWrapModal");
+
+            // Get the modal trigger
+            var turkeyCheeseWrapModalTrigger = document.getElementById("turkeyCheeseWrapModalTrigger");
+
+            // Get the modal close button
+            var turkeyCheeseWrapModalClose = document.getElementById("turkeyCheeseWrapModalClose");
+
+            // Open modal on trgger click
+            turkeyCheeseWrapModalTrigger.onclick = function() {
+              turkeyCheeseWrapModal.style.display = "block";
+            }
+
+            // Close modal on close button click
+            turkeyCheeseWrapModalClose.onclick = function() {
+              turkeyCheeseWrapModal.style.display = "none";
+            }
+
+            // Close modal on any click outside modal image
+            window.onclick = function(event) {
+              if (event.target == turkeyCheeseWrapModal) {
+                turkeyCheeseWrapModal.style.display = "none";
+              }
+            }
+          </script>
+          <p class="menu-description">extra cheese, extra sauce, ranch, wing sauce, onion, tomato, mushrooms, sweet peppers,
+          hot peppers, green peppers, black olives, broccoli, pepporoni, sausage, hot sausage, bacon, ham</p>
+          <p class="menu-prices"><span class="menu-item-price">$6.49</span></p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="menu-sandwich-column">
+        <div class="menu-sandwich-text">
+          <h2 class="menu-item"><span class="menu-links" id="roastBeefWrapModalTrigger">ROAST BEEF</span></h2>
+          <div id="roastBeefWrapModal" class="modal">
+            <div class="modal-content">
+              <h2 class="modal-menu-item">ROAST BEEF
+                <span class="close" id="roastBeefWrapModalClose">&times;</span>
+              </h2>
+              <img src="images/peckville-menu-item.png" class="modal-display" alt="Roast Beef Wrap Image" />
+              <p class="menu-description">old forge style dough, sauced and topped with mozzerella cheese</p>
+              <p class="modal-menu-prices"><span class="menu-item-price">$6.99</span></p>
+            </div>
+          </div>
+          <script>
+            // Get the modal
+            var roastBeefWrapModal = document.getElementById("roastBeefWrapModal");
+
+            // Get the modal trigger
+            var roastBeefWrapModalTrigger = document.getElementById("roastBeefWrapModalTrigger");
+
+            // Get the modal close button
+            var roastBeefWrapModalClose = document.getElementById("roastBeefWrapModalClose");
+
+            // Open modal on trgger click
+            roastBeefWrapModalTrigger.onclick = function() {
+              roastBeefWrapModal.style.display = "block";
+            }
+
+            // Close modal on close button click
+            roastBeefWrapModalClose.onclick = function() {
+              roastBeefWrapModal.style.display = "none";
+            }
+
+            // Close modal on any click outside modal image
+            window.onclick = function(event) {
+              if (event.target == roastBeefWrapModal) {
+                roastBeefWrapModal.style.display = "none";
+              }
+            }
+          </script>
+          <p class="menu-description">extra cheese, extra sauce, ranch, wing sauce, onion, tomato, mushrooms, sweet peppers,
+          hot peppers, green peppers, black olives, broccoli, pepporoni, sausage, hot sausage, bacon, ham</p>
+          <p class="menu-prices"><span class="menu-item-price">$6.99</span></p>
+        </div>
+      </div>
+      <div class="menu-sandwich-column">
+        <div class="menu-sandwich-text">
+          <h2 class="menu-item"><span class="menu-links" id="hamCheeseWrapModalTrigger">HAM & CHEESE</span></h2>
+          <div id="hamCheeseWrapModal" class="modal">
+            <div class="modal-content">
+              <h2 class="modal-menu-item">HAM & CHEESE
+                <span class="close" id="hamCheeseWrapModalClose">&times;</span>
+              </h2>
+              <img src="images/peckville-menu-item.png" class="modal-display" alt="Ham and Cheese Wrap Image" />
+              <p class="menu-description">old forge style dough, sauced and topped with mozzerella cheese</p>
+              <p class="modal-menu-prices"><span class="menu-item-price">$6.49</span></p>
+            </div>
+          </div>
+          <script>
+            // Get the modal
+            var hamCheeseWrapModal = document.getElementById("hamCheeseWrapModal");
+
+            // Get the modal trigger
+            var hamCheeseWrapModalTrigger = document.getElementById("hamCheeseWrapModalTrigger");
+
+            // Get the modal close button
+            var hamCheeseWrapModalClose = document.getElementById("hamCheeseWrapModalClose");
+
+            // Open modal on trgger click
+            hamCheeseWrapModalTrigger.onclick = function() {
+              hamCheeseWrapModal.style.display = "block";
+            }
+
+            // Close modal on close button click
+            hamCheeseWrapModalClose.onclick = function() {
+              hamCheeseWrapModal.style.display = "none";
+            }
+
+            // Close modal on any click outside modal image
+            window.onclick = function(event) {
+              if (event.target == hamCheeseWrapModal) {
+                hamCheeseWrapModal.style.display = "none";
+              }
+            }
+          </script>
+          <p class="menu-description">extra cheese, extra sauce, ranch, wing sauce, onion, tomato, mushrooms, sweet peppers,
+          hot peppers, green peppers, black olives, broccoli, pepporoni, sausage, hot sausage, bacon, ham</p>
+          <p class="menu-prices"><span class="menu-item-price">$6.49</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="menu-header">
+      <h1 id="starter-menu" class="menu-anchor">STARTERS</h1>
+    </div>
+    <div>
+      <div class="menu-sandwich-column">
+        <div class="menu-sandwich-text">
+          <h2 class="menu-item"><span class="menu-links" id="garlicKnotsModalTrigger">FAMOUS GARLIC KNOTS</span></h2>
+          <div id="garlicKnotsModal" class="modal">
+            <div class="modal-content">
+              <h2 class="modal-menu-item">FAMOUS GARLIC KNOTS
+                <span class="close" id="garlicKnotsModalClose">&times;</span>
+              </h2>
+              <img src="images/peckville-menu-item.png" class="modal-display" alt="Garlic Knots Image" />
+              <p class="menu-description">fresh homemade dough, baked and smothered in olive-oil,
+                butter, & garlic sauce, loaded with parmesan cheese, served with sauce</p>
+              <p class="modal-menu-prices">&frac12; Dozen <span class="menu-item-price">$3.49</span> &nbsp; &nbsp; Dozen <span class="menu-item-price">$5.99</span></p>
+            </div>
+          </div>
+          <script>
+            // Get the modal
+            var garlicKnotsModal = document.getElementById("garlicKnotsModal");
+
+            // Get the modal trigger
+            var garlicKnotsModalTrigger = document.getElementById("garlicKnotsModalTrigger");
+
+            // Get the modal close button
+            var garlicKnotsModalClose = document.getElementById("garlicKnotsModalClose");
+
+            // Open modal on trgger click
+            garlicKnotsModalTrigger.onclick = function() {
+              garlicKnotsModal.style.display = "block";
+            }
+
+            // Close modal on close button click
+            garlicKnotsModalClose.onclick = function() {
+              garlicKnotsModal.style.display = "none";
+            }
+
+            // Close modal on any click outside modal image
+            window.onclick = function(event) {
+              if (event.target == garlicKnotsModal) {
+                garlicKnotsModal.style.display = "none";
+              }
+            }
+          </script>
+          <p class="menu-description">fresh homemade dough, baked and smothered in olive-oil,
+            butter, & garlic sauce, loaded with parmesan cheese, served with sauce</p>
+          <p class="menu-prices">&frac12; Dozen <span class="menu-item-price">$3.49</span> &nbsp; &nbsp; Dozen <span class="menu-item-price">$5.99</span></p>
+        </div>
+      </div>
+      <div class="menu-sandwich-column">
+        <div class="menu-sandwich-text">
+          <h2 class="menu-item"><span class="menu-links" id="pizzaKnotsModalTrigger">BAKED PIZZA KNOTS</span></h2>
+          <div id="pizzaKnotsModal" class="modal">
+            <div class="modal-content">
+              <h2 class="modal-menu-item">BAKED PIZZA KNOTS
+                <span class="close" id="pizzaKnotsModalClose">&times;</span>
+              </h2>
+              <img src="images/peckville-menu-item.png" class="modal-display" alt="Pizza Knots Image" />
+              <p class="menu-description">fresh homemade dough, baked and smothered with marinara, mozzerella & parmesan cheese</p>
+              <p class="modal-menu-prices">&frac12; Dozen <span class="menu-item-price">$4.99</span> &nbsp; &nbsp; Dozen <span class="menu-item-price">$7.99</span></p>
+            </div>
+          </div>
+          <script>
+            // Get the modal
+            var pizzaKnotsModal = document.getElementById("pizzaKnotsModal");
+
+            // Get the modal trigger
+            var pizzaKnotsModalTrigger = document.getElementById("pizzaKnotsModalTrigger");
+
+            // Get the modal close button
+            var pizzaKnotsModalClose = document.getElementById("pizzaKnotsModalClose");
+
+            // Open modal on trgger click
+            pizzaKnotsModalTrigger.onclick = function() {
+              pizzaKnotsModal.style.display = "block";
+            }
+
+            // Close modal on close button click
+            pizzaKnotsModalClose.onclick = function() {
+              pizzaKnotsModal.style.display = "none";
+            }
+
+            // Close modal on any click outside modal image
+            window.onclick = function(event) {
+              if (event.target == pizzaKnotsModal) {
+                pizzaKnotsModal.style.display = "none";
+              }
+            }
+          </script>
+          <p class="menu-description">fresh homemade dough, baked and smothered with marinara, mozzerella & parmesan cheese</p>
+          <p class="menu-prices">&frac12; Dozen <span class="menu-item-price">$4.99</span> &nbsp; &nbsp; Dozen <span class="menu-item-price">$7.99</span></p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="menu-sandwich-column">
+        <div class="menu-sandwich-text">
+          <h2 class="menu-item"><span class="menu-links" id="cheesyBreadModalTrigger">GARLIC CHEESY BREAD</span></h2>
+          <div id="cheesyBreadModal" class="modal">
+            <div class="modal-content">
+              <h2 class="modal-menu-item">GARLIC CHEESY BREAD
+                <span class="close" id="cheesyBreadModalClose">&times;</span>
+              </h2>
+              <img src="images/peckville-menu-item.png" class="modal-display" alt="Garlic Cheesy Bread Image" />
+              <p class="menu-description">fresh homemade dough, baked and smothered in olive oil, butter & garlic sauce,
+              topped with a blend of cheese. finished with parmesan and served with sauce</p>
+              <p class="modal-menu-prices">&frac12; Order <span class="menu-item-price">$4.99</span> &nbsp; &nbsp; Full <span class="menu-item-price">$7.99</span></p>
+            </div>
+          </div>
+          <script>
+            // Get the modal
+            var cheesyBreadModal = document.getElementById("cheesyBreadModal");
+
+            // Get the modal trigger
+            var cheesyBreadModalTrigger = document.getElementById("cheesyBreadModalTrigger");
+
+            // Get the modal close button
+            var cheesyBreadModalClose = document.getElementById("cheesyBreadModalClose");
+
+            // Open modal on trgger click
+            cheesyBreadModalTrigger.onclick = function() {
+              cheesyBreadModal.style.display = "block";
+            }
+
+            // Close modal on close button click
+            cheesyBreadModalClose.onclick = function() {
+              cheesyBreadModal.style.display = "none";
+            }
+
+            // Close modal on any click outside modal image
+            window.onclick = function(event) {
+              if (event.target == cheesyBreadModal) {
+                cheesyBreadModal.style.display = "none";
+              }
+            }
+          </script>
+          <p class="menu-description">fresh homemade dough, baked and smothered in olive oil, butter & garlic sauce,
+          topped with a blend of cheese. finished with parmesan and served with sauce</p>
+          <p class="menu-prices">&frac12; Order <span class="menu-item-price">$4.99</span> &nbsp; &nbsp; Full <span class="menu-item-price">$7.99</span></p>
+        </div>
+      </div>
+      <div class="menu-sandwich-column">
+        <div class="menu-sandwich-text">
+          <h2 class="menu-item"><span class="menu-links" id="saladModalTrigger">SALADS</span></h2>
+          <div id="saladModal" class="modal">
+            <div class="modal-content">
+              <h2 class="modal-menu-item">SALADS
+                <span class="close" id="saladModalClose">&times;</span>
+              </h2>
+              <img src="images/peckville-menu-item.png" class="modal-display" alt="Salad Image" />
+              <p class="menu-description">crisp lettuce, fresh tomato, red onion, sliced black olives, and croutons.
+                served with your choice of dressing</p>
+              <p class="modal-menu-prices">Medium <span class="menu-item-price">$3.99</span> &nbsp; &nbsp; Large <span class="menu-item-price">$5.99</span></p>
+            </div>
+          </div>
+          <script>
+            // Get the modal
+            var saladModal = document.getElementById("saladModal");
+
+            // Get the modal trigger
+            var saladModalTrigger = document.getElementById("saladModalTrigger");
+
+            // Get the modal close button
+            var saladModalClose = document.getElementById("saladModalClose");
+
+            // Open modal on trgger click
+            saladModalTrigger.onclick = function() {
+              saladModal.style.display = "block";
+            }
+
+            // Close modal on close button click
+            saladModalClose.onclick = function() {
+              saladModal.style.display = "none";
+            }
+
+            // Close modal on any click outside modal image
+            window.onclick = function(event) {
+              if (event.target == saladModal) {
+                saladModal.style.display = "none";
+              }
+            }
+          </script>
+          <p class="menu-description">crisp lettuce, fresh tomato, red onion, sliced black olives, and croutons.
+            served with your choice of dressing</p>
+          <p class="menu-prices">Medium <span class="menu-item-price">$3.99</span> &nbsp; &nbsp; Large <span class="menu-item-price">$5.99</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-container">
+    <a class="footer-link" href="https://m.facebook.com/PizzaGuysCarbondale/?_ft_=top_level_post_id.777185949135715%3Atl_objid.777185949135715%3Apage_id.485429804977999%3Athid.485429804977999%3A306061129499414%3A2%3A0%3A1514793599%3A3608725513566167138%3Apage_insights.%7B%22485429804977999%22%3A%7B%22role%22%3A1%2C%22page_id%22%3A485429804977999%2C%22post_context%22%3A%7B%22story_fbid%22%3A777185949135715%2C%22publish_time%22%3A1511822164%2C%22story_name%22%3A%22EntStatusCreationStory%22%2C%22object_fbtype%22%3A266%7D%2C%22actor_id%22%3A485429804977999%2C%22parent_story_name%22%3A%22EntStatusCreationStory%22%2C%22sl%22%3A4%2C%22targets%22%3A%5B%7B%22page_id%22%3A485429804977999%2C%22actor_id%22%3A485429804977999%2C%22role%22%3A1%2C%22post_id%22%3A777185949135715%2C%22share_id%22%3A0%7D%5D%7D%7D&__tn__=C-R" target="_blank">Facebook</a>
+    <a class="footer-link" href="application.html">Apply for a Job With Us!</a>
+    <p class="footer-address">46 N. Scott Street<br />
+    Carbondale, PA 18407</p>
+    <p class="copyright">© 2019 <a href="mailto:fkenney719@icloud.com" class="webmaster-email">Frank Kenney</a> and Pizza Guys of Carbondale.</p>
+  </div>
+</body>
+</html>
