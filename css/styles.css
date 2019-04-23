@@ -4,7 +4,7 @@ body {
 }
 
 h3 {
-  color: #E6AF2E;
+  color: #990000;
   font-family: 'Lato', sans-serif;
   font-size: 2.25em;
   text-align: center;
@@ -54,18 +54,6 @@ input[type=radio]:focus {
   border-radius: 50%;
   box-shadow: 0 0 5px rgba(153,0,0,0.8);
   outline: none;
-}
-
-input[type=submit] {
-  background-color: #990000;
-  border: 1px solid #ffffff;
-  border-radius: 7px;
-  color: #ffffff;
-  font-size: 80%;
-  padding: 6px 20px;
-  text-decoration: none;
-  margin: 2px;
-  cursor: pointer;
 }
 
 label {
@@ -276,6 +264,11 @@ textarea {
   width: 100%;
 }
 
+.dining-room-image-2-mobile-display {
+  display: none;
+  width: 100%;
+}
+
 .facebook-container {
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
@@ -299,6 +292,12 @@ textarea {
 
 .facebook-image {
   border-radius: 10px;
+  width: 100%;
+}
+
+.facebook-image-mobile-display {
+  border-radius: 10px;
+  display: none;
   width: 100%;
 }
 
@@ -392,7 +391,6 @@ textarea {
 
 .header-top-mail-icon {
   height: 22px;
-  margin-left: 25px;
   padding-right: 5px;
   position: relative;
   bottom: 0px;
@@ -464,6 +462,15 @@ textarea {
     left: 2px;
 }
 
+.main-images-mobile-display {
+  border-radius: 5px;
+  display: none;
+  height: 100%;
+  width: 33%;
+  position: relative;
+    left: 2px;
+}
+
 .main-text {
   color: #222831;
   font-family: 'Roboto', sans-serif;
@@ -516,6 +523,7 @@ textarea {
 
 .menu-links, .menu-links:visited, .menu-links:active {
   color: #222831;
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -581,6 +589,22 @@ textarea {
   color: #E6AF2E;
 }
 
+.newsletter-email-submit {
+  background: #995151; /* Old browsers */
+  background: -moz-linear-gradient(top, #995151 0%, #991d1d 44%, #990000 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #995151 0%,#991d1d 44%,#990000 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #995151 0%,#991d1d 44%,#990000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#995151', endColorstr='#990000',GradientType=0 ); /* IE6-9 */
+  border: 1px solid #ffffff;
+  border-radius: 7px;
+  color: #ffffff;
+  font-size: 80%;
+  padding: 6px 20px;
+  text-decoration: none;
+  margin: 2px;
+  cursor: pointer;
+}
+
 .newsletter-email-submit:hover {
   border-color: #E6AF2E;
 }
@@ -597,11 +621,11 @@ textarea {
 }
 
 .order-button {
-  background: rgb(229,188,94); /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(229,188,94,1) 1%, rgba(226,161,9,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(229,188,94,1) 1%,rgba(226,161,9,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(229,188,94,1) 1%,rgba(226,161,9,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5bc5e', endColorstr='#e2a109',GradientType=0 ); /* IE6-9 */
+  background: #995151; /* Old browsers */
+  background: -moz-linear-gradient(top, #995151 0%, #991d1d 44%, #990000 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #995151 0%,#991d1d 44%,#990000 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #995151 0%,#991d1d 44%,#990000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#995151', endColorstr='#990000',GradientType=0 ); /* IE6-9 */
   border: 1px solid #ffffff;
   border-radius: 5px;
   color: #ffffff;
@@ -630,7 +654,18 @@ textarea {
   margin: 0;
 }
 
+.splash-mobile-display {
+  display: none;
+  margin: 0;
+  width: 100%;
+}
+
 .store-front-image {
+  width: 100%;
+}
+
+.store-front-image-mobile-display {
+  display: none;
   width: 100%;
 }
 
@@ -675,6 +710,13 @@ textarea {
 /* Modal Content/Box */
 .modal-display {
   border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.modal-mobile-display {
+  border-radius: 3px;
+  display: none;
   margin-bottom: 10px;
   width: 100%;
 }
@@ -879,6 +921,10 @@ textarea {
     margin: 1.5em 0 0;
   }
 
+  .about-mobile-display1, .about-mobile-display2, .dining-room-image-2-mobile-display, .facebook-image-mobile-display, .splash-mobile-display, .store-front-image-mobile-display {
+    display: block;
+  }
+
   .coupon {
     margin: 3em auto;
     padding: 0;
@@ -913,7 +959,7 @@ textarea {
     margin: 0 10px;
   }
 
-  .facebook-frame-br, .header-top-text {
+  .about-table, .dining-room-image-2, .facebook-frame-br, .facebook-image, .header-top-text, .modal-display, .splash, .store-front-image {
     display: none;
   }
 
@@ -927,6 +973,11 @@ textarea {
   }
 
   .main-images {
+    margin-bottom: 5px;
+    width: 100%;
+  }
+
+  .main-images-mobile-display {
     margin-bottom: 5px;
     width: 100%;
   }
@@ -955,8 +1006,18 @@ textarea {
     width: 94%;
   }
 
+  .modal-mobile-display {
+    display: inline-grid;
+  }
+
   .modal-menu-prices {
     padding-bottom: 15px;
+  }
+
+  .newsletter-mobile-display {
+    float: right;
+    margin-right: 1em;
+    width: 75%;
   }
 
   .order-button {
@@ -965,7 +1026,7 @@ textarea {
     padding-bottom: 5px;
     position: fixed;
       top: 0.91em;
-      right: 7.5em;
+      right: 6.5em;
   }
 }
 
@@ -978,7 +1039,7 @@ textarea {
     font-size: 70%;
   }
 
-  .about-mobile-display1, .about-mobile-display2, .dropdown-mobile-display {
+  .dropdown-mobile-display, .main-images-mobile-display {
     display: block;
   }
 
@@ -986,7 +1047,7 @@ textarea {
     width: 95%;
   }
 
-  .about-table, .dropbtn, .navbar-buttons {
+  .dropbtn, .main-images, .navbar-buttons {
     display: none;
   }
 
@@ -1024,6 +1085,16 @@ textarea {
   .facebook-text-container {
     font-size: 50%;
     padding: 10px 0;
+  }
+
+  .header-top-facebook-icon {
+    position: absolute;
+    right: 25px;
+    top: 11px;
+  }
+
+  .header-top-mail-icon, .header-top-phone-icon {
+    margin-left: 0.25em;
   }
 
   .main-text {
