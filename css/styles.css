@@ -294,7 +294,7 @@ font-family: 'Lato', sans-serif;
 .designer-right-column {
   display: inline-block;
   position: relative;
-    right: 0;
+    right: 1em;
   width: 7%;
 }
 
