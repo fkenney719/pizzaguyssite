@@ -1209,7 +1209,7 @@ font-family: 'Lato', sans-serif;
     margin: 20% auto;
     padding: 0 1% 10px;
     position: fixed;
-      top: 1em;
+      top: 0;
     width: 96%;
   }
 
