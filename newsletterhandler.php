@@ -59,9 +59,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript">
-      setTimeout(function(){ window.location.href = 'index.html'; } ,2000);
-  </script>
+  <p class="main-text">Thank's for signing up for e-mail updates. You'll now be redirected back to the main page.</p>
   <div class="footer-container">
     <a class="footer-link" href="https://m.facebook.com/PizzaGuysCarbondale/?_ft_=top_level_post_id.777185949135715%3Atl_objid.777185949135715%3Apage_id.485429804977999%3Athid.485429804977999%3A306061129499414%3A2%3A0%3A1514793599%3A3608725513566167138%3Apage_insights.%7B%22485429804977999%22%3A%7B%22role%22%3A1%2C%22page_id%22%3A485429804977999%2C%22post_context%22%3A%7B%22story_fbid%22%3A777185949135715%2C%22publish_time%22%3A1511822164%2C%22story_name%22%3A%22EntStatusCreationStory%22%2C%22object_fbtype%22%3A266%7D%2C%22actor_id%22%3A485429804977999%2C%22parent_story_name%22%3A%22EntStatusCreationStory%22%2C%22sl%22%3A4%2C%22targets%22%3A%5B%7B%22page_id%22%3A485429804977999%2C%22actor_id%22%3A485429804977999%2C%22role%22%3A1%2C%22post_id%22%3A777185949135715%2C%22share_id%22%3A0%7D%5D%7D%7D&__tn__=C-R" target="_blank">Facebook</a>
     <a class="footer-link" href="application.html">Apply for a Job With Us!</a>
@@ -69,7 +67,7 @@
     Carbondale, PA 18407</p>
     <p class="copyright">© 2019 <a href="mailto:fkenney719@icloud.com" class="webmaster-email">Frank Kenney</a> and Pizza Guys of Carbondale.</p>
   </div>
-  <script type="text/JavaScript">
-      setTimeout("location.replace = 'index.html';",2000);
- </script>
+  <script type="text/javascript">
+      setTimeout(function(){ window.location.href = 'index.html'; } ,2500);
+  </script>
 </body>
