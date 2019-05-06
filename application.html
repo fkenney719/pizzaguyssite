@@ -58,7 +58,7 @@
       <h2 class="application-header">APPLICANT INFORMATION</h2>
       <hr class="application-divider" />
       <div class="application-form">
-        <form method="post" action="">
+        <form method="post" action="applicationhandler.php">
           <div class="application-container">
             <label class="application-form-labels">First Name: </label>
               <input type="text" name="firstName" required="required"  class="application-form-inputs" /><br />
@@ -69,7 +69,7 @@
               <input type="text" maxlength="3" name="phoneFirst3" required="required" class="application-short-input" />
               <input type="text" maxlength="4" name="phoneLast4" required="required" class="application-short-input" /><br />
             <label for="email" class="application-form-labels">E-mail Address: </label>
-              <input type="text" name="email" class="application-form-inputs" /><br />
+              <input type="text" name="email" required="required" class="application-form-inputs" /><br />
             <label for="address1" class="application-form-labels">Street Address: </label>
               <input type="text" name="address1" required="required" class="application-form-inputs" /><br />
             <label for="address2" class="application-form-labels"></label>
@@ -369,7 +369,7 @@
               <input type="radio" name="graduateHighSchool" value="yes" class="application-form-inputs" > <span class="menu-item-description">Yes</span>
               <input type="radio" name="graduateHighSchool" value="no"> <span class="menu-item-description">No</span><br>
             <label for="highSchoolEndDate" class="application-form-labels">Date You Finished or Left High School:  </label>
-              <input type="date" name="highSchoolEndDate" /><br />
+              <input type="date" name="highSchoolEndDate" required="required" class="application-form-inputs" /><br />
             <label for="collegeName" class="application-form-labels">Name of your College or University (if you attended): </label>
               <input type="text" name="collegeName" class="application-form-inputs" /><br />
             <label for="graduateCollege" class="application-form-labels">Did you graduate or earn a degree?</label>
