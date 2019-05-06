@@ -1208,7 +1208,7 @@ font-family: 'Lato', sans-serif;
   .modal-content {
     margin: 20% auto;
     padding: 0 1% 10px;
-    position: fixed;
+    position: relative;
       top: 0;
     width: 96%;
   }
