@@ -689,6 +689,11 @@ font-family: 'Lato', sans-serif;
   color: #990000;
 }
 
+.pastry-scroll-text-container {
+  padding: 0 1.5%;
+  width: 30%;
+}
+
 .phone-email-link, .phone-email-link:hover, .phone-email-link:visited, .phone-email-link:active {
   color: #ffffff;
   text-decoration: none;
